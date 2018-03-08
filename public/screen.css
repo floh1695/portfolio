@@ -9,9 +9,13 @@
 
 .body-style {
   /* Border for testing purposes only */
-  border: .1em solid red;
+  /* border: .1em solid red; */
 }
 
 .body-font {
   font: 1em / 1em sans-serif;
+}
+
+.header-container {
+  display: flex;
 }
