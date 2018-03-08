@@ -16,6 +16,12 @@
   font: 1em / 1em sans-serif;
 }
 
-.header-container {
-  display: flex;
+/* Mobile */
+@media (max-width: 768px) {
+
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+
 }
