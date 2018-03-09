@@ -1,3 +1,7 @@
+/* 
+Defaults to the mobile design
+*/
+
 .html {
   height: 100%;
 }
@@ -16,9 +20,21 @@
   font: 1em / 1em sans-serif;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
 
+.portrait-container {
+  width: 90%;
+}
+
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Desktop */
