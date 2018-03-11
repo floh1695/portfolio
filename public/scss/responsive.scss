@@ -13,31 +13,7 @@
     min-height: 100%;
 }
 
-@import 'shared';
 @import 'header';
 @import 'thumbnails';
-// Footer
-.footer {
-    @extend %base-container;
-    @extend %center-vertically;
-}
-
-.social-media-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-%base-social-media {
-    @extend %testing-border;
-    @extend %default-image;
-    @include square(15vw)
-}
-
-.social-media-1,
-.social-media-2,
-.social-media-3,
-.social-media-4,
-.social-media-5 {
-    @extend %base-social-media;
-}
+@import 'newsfeed';
+@import 'footer';

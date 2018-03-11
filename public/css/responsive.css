@@ -11,51 +11,17 @@
   min-height: 100%; }
 
 /*
-* All shared css should be stored here
-*/
-.header, .thumbnail-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
-.thumbnail-2,
-.thumbnail-3,
-.thumbnail-4, .social-media-1,
-.social-media-2,
-.social-media-3,
-.social-media-4,
-.social-media-5 {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red; }
-
-.header, .thumbnail-container, .footer {
-  flex-grow: 1; }
-
-.header, .thumbnail-container, .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.img-portrait, .thumbnail-1,
-.thumbnail-2,
-.thumbnail-3,
-.thumbnail-4, .social-media-1,
-.social-media-2,
-.social-media-3,
-.social-media-4,
-.social-media-5 {
-  background-image: url("/public/images/temporary.bmp");
-  background-size: 100%;
-  background-position: center; }
-
-/*
 * All styles related to the header
 */
 /*
 * All shared css should be stored here
 */
-.header, .thumbnail-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
+.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
-.thumbnail-4, .social-media-1,
+.thumbnail-4, .feed-1,
+.feed-2, .feed-image-1,
+.feed-image-2, .social-media-1,
 .social-media-2,
 .social-media-3,
 .social-media-4,
@@ -65,10 +31,11 @@
   border-style: solid;
   border-color: red; }
 
-.header, .thumbnail-container, .footer {
+.header, .thumbnail-container, .feed-container, .footer {
   flex-grow: 1; }
 
-.header, .thumbnail-container, .footer {
+.header, .thumbnail-container, .feed-container, .feed-1,
+.feed-2, .footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -76,7 +43,8 @@
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
-.thumbnail-4, .social-media-1,
+.thumbnail-4, .feed-image-1,
+.feed-image-2, .social-media-1,
 .social-media-2,
 .social-media-3,
 .social-media-4,
@@ -100,10 +68,12 @@
 /*
 * All shared css should be stored here
 */
-.header, .thumbnail-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
+.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
-.thumbnail-4, .social-media-1,
+.thumbnail-4, .feed-1,
+.feed-2, .feed-image-1,
+.feed-image-2, .social-media-1,
 .social-media-2,
 .social-media-3,
 .social-media-4,
@@ -113,10 +83,11 @@
   border-style: solid;
   border-color: red; }
 
-.header, .thumbnail-container, .footer {
+.header, .thumbnail-container, .feed-container, .footer {
   flex-grow: 1; }
 
-.header, .thumbnail-container, .footer {
+.header, .thumbnail-container, .feed-container, .feed-1,
+.feed-2, .footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -124,7 +95,8 @@
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
-.thumbnail-4, .social-media-1,
+.thumbnail-4, .feed-image-1,
+.feed-image-2, .social-media-1,
 .social-media-2,
 .social-media-3,
 .social-media-4,
@@ -140,6 +112,101 @@
   width: 90vw;
   height: 90vw;
   flex-grow: 1; }
+
+/*
+* All newsfeed related styles
+*/
+/*
+* All shared css should be stored here
+*/
+.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-1,
+.feed-2, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
+  margin: .15em;
+  border-width: .1em;
+  border-style: solid;
+  border-color: red; }
+
+.header, .thumbnail-container, .feed-container, .footer {
+  flex-grow: 1; }
+
+.header, .thumbnail-container, .feed-container, .feed-1,
+.feed-2, .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
+  background-image: url("/public/images/temporary.bmp");
+  background-size: 100%;
+  background-position: center; }
+
+.feed-1,
+.feed-2 {
+  width: 90vw; }
+
+.feed-image-1,
+.feed-image-2 {
+  width: 100%;
+  height: 4em; }
+
+/*
+* All footer related styles go here
+*/
+/*
+* All shared css should be stored here
+*/
+.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-1,
+.feed-2, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
+  margin: .15em;
+  border-width: .1em;
+  border-style: solid;
+  border-color: red; }
+
+.header, .thumbnail-container, .feed-container, .footer {
+  flex-grow: 1; }
+
+.header, .thumbnail-container, .feed-container, .feed-1,
+.feed-2, .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
+  background-image: url("/public/images/temporary.bmp");
+  background-size: 100%;
+  background-position: center; }
 
 .social-media-container {
   display: flex;
