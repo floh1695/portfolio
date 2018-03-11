@@ -5,12 +5,12 @@
 @import 'shared';
 .feed-container {
     @extend %base-container;
-    @extend %center-vertically;
+    @include center-vertically;
 }
 
 %base-feed {
     @include testing-border;
-    @extend %center-vertically;
+    @include center-vertically;
     width: $global-width;
 }
 

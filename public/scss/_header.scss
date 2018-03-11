@@ -5,7 +5,7 @@
 @import 'shared';
 .header {
     @extend %base-container;
-    @extend %center-vertically;
+    @include center-vertically;
 }
 
 .greeting-container {

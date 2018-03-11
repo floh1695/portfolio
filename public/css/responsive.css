@@ -23,12 +23,6 @@
   border-color: red;
   flex-grow: 1; }
 
-.header, .thumbnail-container, .feed-container, .feed-1,
-.feed-2, .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -41,6 +35,11 @@
   background-image: url("/public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .greeting-container {
   margin: .15em;
@@ -80,12 +79,6 @@
   border-color: red;
   flex-grow: 1; }
 
-.header, .thumbnail-container, .feed-container, .feed-1,
-.feed-2, .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -98,6 +91,11 @@
   background-image: url("/public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
+
+.thumbnail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .thumbnail-1,
 .thumbnail-2,
@@ -124,12 +122,6 @@
   border-color: red;
   flex-grow: 1; }
 
-.header, .thumbnail-container, .feed-container, .feed-1,
-.feed-2, .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -143,12 +135,20 @@
   background-size: 100%;
   background-position: center; }
 
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .feed-1,
 .feed-2 {
   margin: .15em;
   border-width: .1em;
   border-style: solid;
   border-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 90vw; }
 
 .feed-image-1,
@@ -177,12 +177,6 @@
   border-color: red;
   flex-grow: 1; }
 
-.header, .thumbnail-container, .feed-container, .feed-1,
-.feed-2, .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -195,6 +189,11 @@
   background-image: url("/public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .social-media-container {
   display: flex;

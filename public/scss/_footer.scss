@@ -5,7 +5,7 @@
 @import 'shared';
 .footer {
     @extend %base-container;
-    @extend %center-vertically;
+    @include center-vertically;
 }
 
 .social-media-container {

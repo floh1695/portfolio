@@ -5,7 +5,7 @@
 @import 'shared';
 .thumbnail-container {
     @extend %base-container;
-    @extend %center-vertically;
+    @include center-vertically;
 }
 
 %base-thumbnail {
