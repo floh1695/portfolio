@@ -13,7 +13,16 @@ Defaults to the mobile design
 /*
  * All shared css should be stored here
  */
-.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .feed-1, .feed-2, .feed-image-1, .feed-image-2, .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-1,
+.feed-2, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
   margin: .15em;
   border-width: .1em;
   border-style: solid;
@@ -22,12 +31,21 @@ Defaults to the mobile design
 .header, .thumbnail-container, .feed-container, .footer {
   flex-grow: 1; }
 
-.header, .thumbnail-container, .feed-container, .feed-1, .feed-2, .footer {
+.header, .thumbnail-container, .feed-container, .feed-1,
+.feed-2, .footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.img-portrait, .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .feed-image-1, .feed-image-2, .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+.img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
   background-image: url("/public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
@@ -38,7 +56,16 @@ Defaults to the mobile design
 /*
  * All shared css should be stored here
  */
-.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .feed-1, .feed-2, .feed-image-1, .feed-image-2, .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+.header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-1,
+.feed-2, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
   margin: .15em;
   border-width: .1em;
   border-style: solid;
@@ -47,12 +74,21 @@ Defaults to the mobile design
 .header, .thumbnail-container, .feed-container, .footer {
   flex-grow: 1; }
 
-.header, .thumbnail-container, .feed-container, .feed-1, .feed-2, .footer {
+.header, .thumbnail-container, .feed-container, .feed-1,
+.feed-2, .footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.img-portrait, .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .feed-image-1, .feed-image-2, .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+.img-portrait, .thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4, .feed-image-1,
+.feed-image-2, .social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
   background-image: url("/public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
@@ -66,15 +102,20 @@ Defaults to the mobile design
   width: 80vw;
   height: 80vw; }
 
-.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
+.thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4 {
   width: 90vw;
   height: 90vw;
   flex-grow: 1; }
 
-.feed-1, .feed-2 {
+.feed-1,
+.feed-2 {
   width: 90vw; }
 
-.feed-image-1, .feed-image-2 {
+.feed-image-1,
+.feed-image-2 {
   width: 100%;
   height: 4em; }
 
@@ -83,7 +124,11 @@ Defaults to the mobile design
   flex-direction: row;
   justify-content: space-around; }
 
-.social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+.social-media-1,
+.social-media-2,
+.social-media-3,
+.social-media-4,
+.social-media-5 {
   width: 15vw;
   height: 15vw; }
 

@@ -6,41 +6,41 @@
     $debug: true;
     margin: .15em;
     @if $debug {
-      border-width: .1em;
-      border-style: solid;
-      border-color: red;
+        border-width: .1em;
+        border-style: solid;
+        border-color: red;
     }
-  }
-  
-  %base-container {
+}
+
+%base-container {
     @extend %testing-border;
     flex-grow: 1;
-  }
-  
-  %center-vertically {
+}
+
+%center-vertically {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  @function img-path($partial-path) {
-    @return url('/public/images/' + $partial-path)
-  }
-  
-  %default-image {
+}
+
+@function img-path($partial-path) {
+    @return url('/public/images/'+$partial-path)
+}
+
+%default-image {
     background-image: img-path('temporary.bmp');
     background-size: 100%;
     background-position: center;
-  }
-  
-  $global-width: 90vw;
-  
-  @mixin rectangle($width, $height) {
+}
+
+$global-width: 90vw;
+@mixin rectangle($width,
+$height) {
     width: $width;
     height: $height;
-  }
-  
-  @mixin square($length) {
-    @include rectangle($length, $length);
-  }
-  
+}
+
+@mixin square($length) {
+    @include rectangle($length,
+    $length);
+}
