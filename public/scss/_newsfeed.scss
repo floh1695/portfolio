@@ -29,3 +29,13 @@
 .feed-image-2 {
     @extend %feed-image-base;
 }
+
+%base-feed-text {
+    @include text-default-style;
+}
+
+$feed-text-side-margin: 1em;
+.feed-text-1,
+.feed-text-2 {
+    @extend %base-feed-text;
+}

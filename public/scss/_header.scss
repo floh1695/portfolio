@@ -15,6 +15,17 @@
     align-items: center;
 }
 
+$greetings-margin: .1em;
+.greeting-head {
+    @include text-default-style;
+    margin-bottom: $greetings-margin;
+}
+
+.greeting-small-text {
+    @include text-default-style;
+    margin-top: $greetings-margin;
+}
+
 .img-portrait {
     @extend %testing-border;
     @extend %default-image;

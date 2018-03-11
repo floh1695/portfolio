@@ -40,6 +40,10 @@
 
 // A particular width that showed up often, may be important?
 $global-width: 90vw;
+@mixin text-default-style {
+    margin: .5em;
+}
+
 // Used to shape items to any rectangle
 @mixin rectangle($width,
 $height) {
