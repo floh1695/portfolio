@@ -94,11 +94,21 @@ $global-width: 90vw;
 
 %base-feed {
   @extend %testing-border;
+  @extend %center-vertically;
   width: $global-width;
+}
+
+%feed-image-base {
+  @extend %testing-border;
+  @include rectangle(100%, 4em);
 }
 
 .feed-1, .feed-2 {
   @extend %base-feed;
+}
+
+.feed-image-1, .feed-image-2 {
+  @extend %feed-image-base;
 }
 
 // Footer
