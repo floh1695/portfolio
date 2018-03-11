@@ -3,10 +3,10 @@
 */
 
 // Configuration
-%testing-border {
+@mixin testing-border {
     $debug: true;
-    margin: .15em;
     @if $debug {
+        margin: .15em;
         border-width: .1em;
         border-style: solid;
         border-color: red;
@@ -15,7 +15,7 @@
 
 // Superclass to header|section|footer tags under body
 %base-container {
-    @extend %testing-border;
+    @include testing-border;
     flex-grow: 1;
 }
 

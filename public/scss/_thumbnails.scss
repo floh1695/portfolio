@@ -9,7 +9,7 @@
 }
 
 %base-thumbnail {
-    @extend %testing-border;
+    @include testing-border;
     @extend %default-image;
     @include square($global-width);
     flex-grow: 1;

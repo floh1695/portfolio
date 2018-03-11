@@ -9,13 +9,13 @@
 }
 
 %base-feed {
-    @extend %testing-border;
+    @include testing-border;
     @extend %center-vertically;
     width: $global-width;
 }
 
 %feed-image-base {
-    @extend %testing-border;
+    @include testing-border;
     @extend %default-image;
     @include rectangle(100%, 4em);
 }

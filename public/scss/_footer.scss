@@ -15,7 +15,7 @@
 }
 
 %base-social-media {
-    @extend %testing-border;
+    @include testing-border;
     @extend %default-image;
     @include square(15vw)
 }
