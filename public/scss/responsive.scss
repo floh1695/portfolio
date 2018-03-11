@@ -52,8 +52,12 @@ $global-width: 90vw;
   align-items: center;
 }
 
-.greeting {
+.greeting-container {
   @extend %testing-border;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-portrait {
