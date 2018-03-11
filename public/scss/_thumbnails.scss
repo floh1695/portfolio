@@ -1,0 +1,22 @@
+/*
+* All styles related to the thumbnails
+*/
+
+.thumbnail-container {
+    @extend %base-container;
+    @extend %center-vertically;
+}
+
+%base-thumbnail {
+    @extend %testing-border;
+    @extend %default-image;
+    @include square($global-width);
+    flex-grow: 1;
+}
+
+.thumbnail-1,
+.thumbnail-2,
+.thumbnail-3,
+.thumbnail-4 {
+    @extend %base-thumbnail;
+}

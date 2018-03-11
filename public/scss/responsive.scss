@@ -1,5 +1,5 @@
 /* 
-Defaults to the mobile design
+* Defaults to the mobile design
 */
 
 .html {
@@ -15,26 +15,7 @@ Defaults to the mobile design
 
 @import 'shared';
 @import 'header';
-// Thumbnails
-.thumbnail-container {
-    @extend %base-container;
-    @extend %center-vertically;
-}
-
-%base-thumbnail {
-    @extend %testing-border;
-    @extend %default-image;
-    @include square($global-width);
-    flex-grow: 1;
-}
-
-.thumbnail-1,
-.thumbnail-2,
-.thumbnail-3,
-.thumbnail-4 {
-    @extend %base-thumbnail;
-}
-
+@import 'thumbnails';
 // Newsfeed
 .feed-container {
     @extend %base-container;

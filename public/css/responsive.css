@@ -1,5 +1,5 @@
 /* 
-Defaults to the mobile design
+* Defaults to the mobile design
 */
 .html {
   height: 100%; }
@@ -11,8 +11,8 @@ Defaults to the mobile design
   min-height: 100%; }
 
 /*
- * All shared css should be stored here
- */
+* All shared css should be stored here
+*/
 .header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -51,11 +51,11 @@ Defaults to the mobile design
   background-position: center; }
 
 /*
- * All styles related to the header
- */
+* All styles related to the header
+*/
 /*
- * All shared css should be stored here
- */
+* All shared css should be stored here
+*/
 .header, .thumbnail-container, .feed-container, .footer, .greeting-container, .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -102,6 +102,9 @@ Defaults to the mobile design
   width: 80vw;
   height: 80vw; }
 
+/*
+* All styles related to the thumbnails
+*/
 .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
