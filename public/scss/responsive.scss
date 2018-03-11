@@ -37,6 +37,16 @@ Defaults to the mobile design
   align-items: center;
 }
 
+@function img-path($partial-path) {
+  @return url('/public/images/' + $partial-path)
+}
+
+%default-image {
+  background-image: img-path('temporary.bmp');
+  background-size: 100%;
+  background-position: center;
+}
+
 $global-width: 90vw;
 
 @mixin rectangle($width, $height) {
@@ -65,6 +75,7 @@ $global-width: 90vw;
 
 .img-portrait {
   @extend %testing-border;
+  @extend %default-image;
   @include square(80vw);
 }
 
@@ -77,6 +88,7 @@ $global-width: 90vw;
 
 %base-thumbnail {
   @extend %testing-border;
+  @extend %default-image;  
   @include square($global-width);
   flex-grow: 1;
 }
@@ -100,6 +112,7 @@ $global-width: 90vw;
 
 %feed-image-base {
   @extend %testing-border;
+  @extend %default-image;
   @include rectangle(100%, 4em);
 }
 
@@ -126,6 +139,7 @@ $global-width: 90vw;
 
 %base-social-media {
   @extend %testing-border;
+  @extend %default-image;  
   @include square(15vw)
 }
 

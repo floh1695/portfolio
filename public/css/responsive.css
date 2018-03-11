@@ -24,6 +24,11 @@ Defaults to the mobile design
   flex-direction: column;
   align-items: center; }
 
+.img-portrait, .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .feed-image-1, .feed-image-2, .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+  background-image: url("/public/images/temporary.bmp");
+  background-size: 100%;
+  background-position: center; }
+
 .greeting-container {
   display: flex;
   flex-direction: column;
