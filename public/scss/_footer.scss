@@ -2,7 +2,6 @@
 * All footer related styles go here
 */
 
-@import 'shared';
 .footer {
     @extend %base-container;
     @include center-vertically;

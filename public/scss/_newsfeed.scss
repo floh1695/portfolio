@@ -2,7 +2,6 @@
 * All newsfeed related styles
 */
 
-@import 'shared';
 .feed-container {
     @extend %base-container;
     @include center-vertically;

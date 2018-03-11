@@ -2,16 +2,26 @@
 * All styles related to the thumbnails
 */
 
-@import 'shared';
 .thumbnail-container {
     @extend %base-container;
-    @include center-vertically;
+    display: flex;
+    @media #{$mobile} {
+        @include center-vertically;
+    }
+    @media #{$desktop} {
+        flex-direction: row;
+    }
 }
 
 %base-thumbnail {
     @include testing-border;
     @extend %default-image;
-    @include square($global-width);
+    @media #{$mobile} {
+        @include square($global-width);
+    }
+    @media #{$desktop} {
+        @include square(20vw);
+    }
     flex-grow: 1;
 }
 

@@ -1,5 +1,6 @@
 /* 
-* Defaults to the mobile design
+* Main responsive file:
+* Mostly just used to import other sass files
 */
 
 .html {
@@ -13,6 +14,7 @@
     min-height: 100%;
 }
 
+@import 'shared';
 @import 'header';
 @import 'thumbnails';
 @import 'newsfeed';

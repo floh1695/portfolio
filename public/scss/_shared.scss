@@ -13,11 +13,9 @@
     }
 }
 
-@mixin desktop {
-    @media (min-width: 768) {
-        @content;
-    }
-}
+$mobile: '(max-width: 768)';
+
+$desktop: '(min-width: 769)';
 
 // Superclass to header|section|footer tags under body
 %base-container {

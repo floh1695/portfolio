@@ -2,7 +2,6 @@
 * All styles related to the header
 */
 
-@import 'shared';
 .header {
     @extend %base-container;
     @include center-vertically;

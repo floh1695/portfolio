@@ -1,5 +1,6 @@
 /* 
-* Defaults to the mobile design
+* Main responsive file:
+* Mostly just used to import other sass files
 */
 .html {
   height: 100%; }
@@ -10,9 +11,6 @@
   margin: 0;
   min-height: 100%; }
 
-/*
-* All styles related to the header
-*/
 /*
 * All shared css should be stored here
 */
@@ -36,6 +34,9 @@
   background-size: 100%;
   background-position: center; }
 
+/*
+* All styles related to the header
+*/
 .header {
   display: flex;
   flex-direction: column;
@@ -69,33 +70,16 @@
 /*
 * All styles related to the thumbnails
 */
-/*
-* All shared css should be stored here
-*/
-.header, .thumbnail-container, .feed-container, .footer {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
-  flex-grow: 1; }
-
-.img-portrait, .thumbnail-1,
-.thumbnail-2,
-.thumbnail-3,
-.thumbnail-4, .feed-image-1,
-.feed-image-2, .social-media-1,
-.social-media-2,
-.social-media-3,
-.social-media-4,
-.social-media-5 {
-  background-image: url("/public/images/temporary.bmp");
-  background-size: 100%;
-  background-position: center; }
-
 .thumbnail-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  display: flex; }
+  @media (max-width: 768) {
+    .thumbnail-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  @media (min-width: 769) {
+    .thumbnail-container {
+      flex-direction: row; } }
 
 .thumbnail-1,
 .thumbnail-2,
@@ -105,36 +89,25 @@
   border-width: .1em;
   border-style: solid;
   border-color: red;
-  width: 90vw;
-  height: 90vw;
   flex-grow: 1; }
+  @media (max-width: 768) {
+    .thumbnail-1,
+    .thumbnail-2,
+    .thumbnail-3,
+    .thumbnail-4 {
+      width: 90vw;
+      height: 90vw; } }
+  @media (min-width: 769) {
+    .thumbnail-1,
+    .thumbnail-2,
+    .thumbnail-3,
+    .thumbnail-4 {
+      width: 20vw;
+      height: 20vw; } }
 
 /*
 * All newsfeed related styles
 */
-/*
-* All shared css should be stored here
-*/
-.header, .thumbnail-container, .feed-container, .footer {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
-  flex-grow: 1; }
-
-.img-portrait, .thumbnail-1,
-.thumbnail-2,
-.thumbnail-3,
-.thumbnail-4, .feed-image-1,
-.feed-image-2, .social-media-1,
-.social-media-2,
-.social-media-3,
-.social-media-4,
-.social-media-5 {
-  background-image: url("/public/images/temporary.bmp");
-  background-size: 100%;
-  background-position: center; }
-
 .feed-container {
   display: flex;
   flex-direction: column;
@@ -167,29 +140,6 @@
 /*
 * All footer related styles go here
 */
-/*
-* All shared css should be stored here
-*/
-.header, .thumbnail-container, .feed-container, .footer {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
-  flex-grow: 1; }
-
-.img-portrait, .thumbnail-1,
-.thumbnail-2,
-.thumbnail-3,
-.thumbnail-4, .feed-image-1,
-.feed-image-2, .social-media-1,
-.social-media-2,
-.social-media-3,
-.social-media-4,
-.social-media-5 {
-  background-image: url("/public/images/temporary.bmp");
-  background-size: 100%;
-  background-position: center; }
-
 .footer {
   display: flex;
   flex-direction: column;
