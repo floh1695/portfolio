@@ -7,8 +7,118 @@ Defaults to the mobile design
 }
 
 .body {
+  display: flex;
+  flex-direction: column;
+  
   margin: 0;
   min-height: 100%;
+}
+
+// General shared
+
+%testing-border {
+  $debug: true;
+  margin: .15em;
+  @if $debug {
+    border-width: .1em;
+    border-style: solid;
+    border-color: red;
+  }
+}
+
+%base-container {
+  @extend %testing-border;
+  flex-grow: 1;
+}
+
+$global-width: 90vw;
+
+@mixin rectangle($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($length) {
+  @include rectangle($length, $length);
+}
+
+// Header
+
+.header {
+  @extend %base-container;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting, .img-portrait {
+  @extend %testing-border;
+  flex-grow: 1;
+}
+
+// Thumbnails
+
+.thumbnail-container {
+  @extend %base-container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%base-thumbnail {
+  @extend %testing-border;
+  @include square($global-width);
+  flex-grow: 1;
+}
+
+.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
+  @extend %base-thumbnail;
+}
+
+// Newsfeed
+
+.feed-container {
+  @extend %base-container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%base-feed {
+  @extend %testing-border;
+  width: $global-width;
+}
+
+.feed-1, .feed-2 {
+  @extend %base-feed;
+}
+
+// Footer
+
+.footer {
+  @extend %base-container;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+%base-social-media {
+  @extend %testing-border;
+  @include square(15vw)
+}
+
+.social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+  @extend %base-social-media;
 }
 
 /* Desktop */

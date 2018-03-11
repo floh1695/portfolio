@@ -5,8 +5,59 @@ Defaults to the mobile design
   height: 100%; }
 
 .body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-height: 100%; }
+
+.header, .thumbnail-container, .feed-container, .footer, .greeting, .img-portrait, .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .feed-1, .feed-2, .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+  margin: .15em;
+  border-width: .1em;
+  border-style: solid;
+  border-color: red; }
+
+.header, .thumbnail-container, .feed-container, .footer {
+  flex-grow: 1; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.greeting, .img-portrait {
+  flex-grow: 1; }
+
+.thumbnail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
+  width: 90vw;
+  height: 90vw;
+  flex-grow: 1; }
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.feed-1, .feed-2 {
+  width: 90vw; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
+  width: 15vw;
+  height: 15vw; }
 
 /* Desktop */
 @media (min-width: 769px) {
