@@ -2,6 +2,7 @@
 * All styles related to the thumbnails
 */
 
+@import 'shared';
 .thumbnail-container {
     @extend %base-container;
     @extend %center-vertically;
