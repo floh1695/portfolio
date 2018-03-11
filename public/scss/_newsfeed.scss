@@ -17,6 +17,7 @@
     @include testing-border;
     @extend %default-image;
     @include rectangle(100%, 4em);
+    margin-top: 0;
 }
 
 .feed-1,

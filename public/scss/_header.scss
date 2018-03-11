@@ -5,6 +5,10 @@
 .header {
     @extend %base-container;
     @include center-vertically;
+    @media #{$desktop} {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
 }
 
 .greeting-container {
@@ -28,5 +32,10 @@ $greetings-margin: .1em;
 .img-portrait {
     @include testing-border;
     @extend %default-image;
-    @include square(80vw);
+    @media #{$mobile} {
+        @include square(80vw);
+    }
+    @media #{$desktop} {
+        @include square(20vw)
+    }
 }

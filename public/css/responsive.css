@@ -41,6 +41,10 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 769px) {
+    .header {
+      flex-direction: row-reverse;
+      justify-content: center; } }
 
 .greeting-container {
   margin: .15em;
@@ -63,9 +67,15 @@
   margin: .15em;
   border-width: .1em;
   border-style: solid;
-  border-color: red;
-  width: 80vw;
-  height: 80vw; }
+  border-color: red; }
+  @media (max-width: 768px) {
+    .img-portrait {
+      width: 80vw;
+      height: 80vw; } }
+  @media (min-width: 769px) {
+    .img-portrait {
+      width: 20vw;
+      height: 20vw; } }
 
 /*
 * All styles related to the thumbnails
@@ -74,10 +84,11 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 769px) {
+    .thumbnail-container {
+      flex-direction: row;
+      justify-content: center; } }
 
-@media (min-width: 769px) {
-  .thumbnail-container {
-    flex-direction: row; } }
 .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -85,23 +96,23 @@
   margin: .15em;
   border-width: .1em;
   border-style: solid;
-  border-color: red;
-  flex-grow: 1; }
+  border-color: red; }
+  @media (max-width: 768px) {
+    .thumbnail-1,
+    .thumbnail-2,
+    .thumbnail-3,
+    .thumbnail-4 {
+      flex-grow: 1;
+      width: 90vw;
+      height: 90vw; } }
+  @media (min-width: 769px) {
+    .thumbnail-1,
+    .thumbnail-2,
+    .thumbnail-3,
+    .thumbnail-4 {
+      width: 15vw;
+      height: 15vw; } }
 
-@media (max-width: 768px) {
-  .thumbnail-1,
-  .thumbnail-2,
-  .thumbnail-3,
-  .thumbnail-4 {
-    width: 90vw;
-    height: 90vw; } }
-@media (min-width: 769px) {
-  .thumbnail-1,
-  .thumbnail-2,
-  .thumbnail-3,
-  .thumbnail-4 {
-    width: 20vw;
-    height: 20vw; } }
 /*
 * All newsfeed related styles
 */
@@ -128,7 +139,8 @@
   border-style: solid;
   border-color: red;
   width: 100%;
-  height: 4em; }
+  height: 4em;
+  margin-top: 0; }
 
 .feed-text-1,
 .feed-text-2 {
@@ -155,8 +167,22 @@
   margin: .15em;
   border-width: .1em;
   border-style: solid;
-  border-color: red;
-  width: 15vw;
-  height: 15vw; }
+  border-color: red; }
+  @media (max-width: 768px) {
+    .social-media-1,
+    .social-media-2,
+    .social-media-3,
+    .social-media-4,
+    .social-media-5 {
+      width: 15vw;
+      height: 15vw; } }
+  @media (min-width: 769px) {
+    .social-media-1,
+    .social-media-2,
+    .social-media-3,
+    .social-media-4,
+    .social-media-5 {
+      width: 5vw;
+      height: 5vw; } }
 
 /*# sourceMappingURL=responsive.css.map */

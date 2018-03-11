@@ -16,7 +16,12 @@
 %base-social-media {
     @include testing-border;
     @extend %default-image;
-    @include square(15vw)
+    @media #{$mobile} {
+        @include square(15vw);
+    }
+    @media #{$desktop} {
+        @include square(5vw);
+    }
 }
 
 .social-media-1,
