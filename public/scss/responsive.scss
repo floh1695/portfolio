@@ -16,26 +16,7 @@ Defaults to the mobile design
 
 @import 'shared';
 
-// Header
-
-.header {
-  @extend %base-container;
-  @extend %center-vertically;
-}
-
-.greeting-container {
-  @extend %testing-border;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-portrait {
-  @extend %testing-border;
-  @extend %default-image;
-  @include square(80vw);
-}
+@import 'header';
 
 // Thumbnails
 
