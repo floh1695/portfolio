@@ -49,12 +49,16 @@ $global-width: 90vw;
   
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-.greeting, .img-portrait {
+.greeting {
   @extend %testing-border;
-  flex-grow: 1;
+}
+
+.img-portrait {
+  @extend %testing-border;
+  @include square(80vw);
 }
 
 // Thumbnails
@@ -119,9 +123,4 @@ $global-width: 90vw;
 
 .social-media-1, .social-media-2, .social-media-3, .social-media-4, .social-media-5 {
   @extend %base-social-media;
-}
-
-/* Desktop */
-@media (min-width: 769px) {
-  /* TODO: Desktop stuff here */
 }
