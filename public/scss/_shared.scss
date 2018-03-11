@@ -2,6 +2,7 @@
 * All shared css should be stored here
 */
 
+// Configuration
 %testing-border {
     $debug: true;
     margin: .15em;
@@ -12,34 +13,41 @@
     }
 }
 
+// Superclass to header|section|footer tags under body
 %base-container {
     @extend %testing-border;
     flex-grow: 1;
 }
 
+// Center items vertically
 %center-vertically {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+// Convenience function for image paths
 @function img-path($partial-path) {
-    @return url('/public/images/'+$partial-path)
+    @return url('/public/images/'+$partial-path);
 }
 
+// Contains the default configuration for images
 %default-image {
     background-image: img-path('temporary.bmp');
     background-size: 100%;
     background-position: center;
 }
 
+// A particular width that showed up often, may be important?
 $global-width: 90vw;
+// Used to shape items to any rectangle
 @mixin rectangle($width,
 $height) {
     width: $width;
     height: $height;
 }
 
+// A special class of rectangle
 @mixin square($length) {
     @include rectangle($length,
     $length);
