@@ -1,0 +1,17 @@
+/* 
+Defaults to the mobile design
+*/
+
+.html {
+  height: 100%;
+}
+
+.body {
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  /* TODO: Desktop stuff here */
+}
