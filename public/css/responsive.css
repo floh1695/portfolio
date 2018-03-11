@@ -71,16 +71,13 @@
 * All styles related to the thumbnails
 */
 .thumbnail-container {
-  display: flex; }
-  @media (max-width: 768) {
-    .thumbnail-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center; } }
-  @media (min-width: 769) {
-    .thumbnail-container {
-      flex-direction: row; } }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
+@media (min-width: 769px) {
+  .thumbnail-container {
+    flex-direction: row; } }
 .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
@@ -90,21 +87,21 @@
   border-style: solid;
   border-color: red;
   flex-grow: 1; }
-  @media (max-width: 768) {
-    .thumbnail-1,
-    .thumbnail-2,
-    .thumbnail-3,
-    .thumbnail-4 {
-      width: 90vw;
-      height: 90vw; } }
-  @media (min-width: 769) {
-    .thumbnail-1,
-    .thumbnail-2,
-    .thumbnail-3,
-    .thumbnail-4 {
-      width: 20vw;
-      height: 20vw; } }
 
+@media (max-width: 768px) {
+  .thumbnail-1,
+  .thumbnail-2,
+  .thumbnail-3,
+  .thumbnail-4 {
+    width: 90vw;
+    height: 90vw; } }
+@media (min-width: 769px) {
+  .thumbnail-1,
+  .thumbnail-2,
+  .thumbnail-3,
+  .thumbnail-4 {
+    width: 20vw;
+    height: 20vw; } }
 /*
 * All newsfeed related styles
 */

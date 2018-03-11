@@ -13,9 +13,8 @@
     }
 }
 
-$mobile: '(max-width: 768)';
-
-$desktop: '(min-width: 769)';
+$mobile: '(max-width: 768px)';
+$desktop: '(min-width: 769px)';
 
 // Superclass to header|section|footer tags under body
 %base-container {

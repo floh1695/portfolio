@@ -4,11 +4,11 @@
 
 .thumbnail-container {
     @extend %base-container;
-    display: flex;
-    @media #{$mobile} {
-        @include center-vertically;
-    }
-    @media #{$desktop} {
+    @include center-vertically;
+}
+
+@media #{$desktop} {
+    .thumbnail-container {
         flex-direction: row;
     }
 }
@@ -16,13 +16,19 @@
 %base-thumbnail {
     @include testing-border;
     @extend %default-image;
-    @media #{$mobile} {
+    flex-grow: 1;
+}
+
+@media #{$mobile} {
+    %base-thumbnail {
         @include square($global-width);
     }
-    @media #{$desktop} {
+}
+
+@media #{$desktop} {
+    %base-thumbnail {
         @include square(20vw);
     }
-    flex-grow: 1;
 }
 
 .thumbnail-1,
