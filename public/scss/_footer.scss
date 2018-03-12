@@ -5,6 +5,7 @@
 .footer {
     @extend %base-container;
     @include center-vertically;
+    color: $background-color;
 }
 
 .social-media-container {
@@ -16,6 +17,7 @@
 %base-social-media {
     @include testing-border;
     @extend %default-image;
+    margin: .25em;
     @media #{$mobile} {
         @include square(15vw);
     }

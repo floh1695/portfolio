@@ -10,6 +10,8 @@
 %base-feed {
     @include testing-border;
     @include center-vertically;
+    margin: .5em;
+    border: .2em solid rgb(26, 26, 26);
     width: $global-width;
 }
 
@@ -23,11 +25,17 @@
 .feed-1,
 .feed-2 {
     @extend %base-feed;
+    background-color: $background-color;
 }
 
-.feed-image-1,
+.feed-image-1 {
+    @extend %feed-image-base;
+    background-image: img-path('backgrounds/react.png');
+}
+
 .feed-image-2 {
     @extend %feed-image-base;
+    background-image: img-path('backgrounds/code.png');
 }
 
 %base-feed-text {

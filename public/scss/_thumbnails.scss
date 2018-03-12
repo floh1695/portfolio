@@ -14,12 +14,13 @@
 %base-thumbnail {
     @include testing-border;
     @extend %default-image;
+    margin: 1em;
     @media #{$mobile} {
         flex-grow: 1;
-        @include square($global-width);
+        @include rectangle($global-width, $global-width);
     }
     @media #{$desktop} {
-        @include square(15vw);
+        @include rectangle(15vw, 10.5vw);
     }
 }
 

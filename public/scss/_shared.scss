@@ -4,7 +4,7 @@
 
 // Configuration
 @mixin testing-border {
-    $debug: true;
+    $debug: false;
     @if $debug {
         margin: .15em;
         border-width: .1em;
@@ -31,7 +31,7 @@ $desktop: '(min-width: 769px)';
 
 // Convenience function for image paths
 @function img-path($partial-path) {
-    @return url('./public/images/'+$partial-path);
+    @return url('/public/images/'+$partial-path);
 }
 
 // Contains the default configuration for images
@@ -59,3 +59,5 @@ $height) {
     @include rectangle($length,
     $length);
 }
+
+$background-color: lightgrey;

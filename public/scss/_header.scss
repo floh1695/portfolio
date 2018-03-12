@@ -5,7 +5,15 @@
 .header {
     @extend %base-container;
     @include center-vertically;
+
+    background-image: img-path('backgrounds/space.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 100% 100%;
+
     @media #{$desktop} {
+        height: 40vw;
         flex-direction: row-reverse;
         justify-content: center;
     }
@@ -16,6 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(211, 211, 211, 0.75);
+    margin: 1em;
 }
 
 $greetings-margin: .1em;
@@ -32,6 +42,7 @@ $greetings-margin: .1em;
 .img-portrait {
     @include testing-border;
     @extend %default-image;
+    margin: 2em;
     @media #{$mobile} {
         @include square(80vw);
     }

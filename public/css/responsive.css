@@ -9,28 +9,24 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: black; }
 
 /*
 * All shared css should be stored here
 */
 .header, .thumbnail-container, .feed-container, .footer {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
   flex-grow: 1; }
 
 .img-portrait, .thumbnail-1,
 .thumbnail-2,
 .thumbnail-3,
-.thumbnail-4, .feed-image-1,
-.feed-image-2, .social-media-1,
+.thumbnail-4, .feed-image-1, .feed-image-2, .social-media-1,
 .social-media-2,
 .social-media-3,
 .social-media-4,
 .social-media-5 {
-  background-image: url("./public/images/temporary.bmp");
+  background-image: url("/public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
 
@@ -40,20 +36,24 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-image: url("/public/images/backgrounds/space.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 100% 100%; }
   @media (min-width: 769px) {
     .header {
+      height: 40vw;
       flex-direction: row-reverse;
       justify-content: center; } }
 
 .greeting-container {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.75);
+  margin: 1em; }
 
 .greeting-head {
   margin: .5em;
@@ -64,10 +64,7 @@
   margin-top: 0.1em; }
 
 .img-portrait {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red; }
+  margin: 2em; }
   @media (max-width: 768px) {
     .img-portrait {
       width: 80vw;
@@ -93,10 +90,7 @@
 .thumbnail-2,
 .thumbnail-3,
 .thumbnail-4 {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red; }
+  margin: 1em; }
   @media (max-width: 768px) {
     .thumbnail-1,
     .thumbnail-2,
@@ -111,7 +105,7 @@
     .thumbnail-3,
     .thumbnail-4 {
       width: 15vw;
-      height: 15vw; } }
+      height: 10.5vw; } }
 
 /*
 * All newsfeed related styles
@@ -123,24 +117,27 @@
 
 .feed-1,
 .feed-2 {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: .5em;
+  border: 0.2em solid #1a1a1a;
   width: 90vw; }
 
-.feed-image-1,
-.feed-image-2 {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red;
+.feed-image-1, .feed-image-2 {
   width: 100%;
   height: 4em;
   margin-top: 0; }
+
+.feed-1,
+.feed-2 {
+  background-color: lightgrey; }
+
+.feed-image-1 {
+  background-image: url("/public/images/backgrounds/react.png"); }
+
+.feed-image-2 {
+  background-image: url("/public/images/backgrounds/code.png"); }
 
 .feed-text-1,
 .feed-text-2 {
@@ -152,7 +149,8 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  color: lightgrey; }
 
 .social-media-container {
   display: flex;
@@ -164,10 +162,7 @@
 .social-media-3,
 .social-media-4,
 .social-media-5 {
-  margin: .15em;
-  border-width: .1em;
-  border-style: solid;
-  border-color: red; }
+  margin: .25em; }
   @media (max-width: 768px) {
     .social-media-1,
     .social-media-2,
