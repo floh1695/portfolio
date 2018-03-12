@@ -31,7 +31,8 @@ $desktop: '(min-width: 769px)';
 
 // Convenience function for image paths
 @function img-path($partial-path) {
-    @return url('/public/images/'+$partial-path);
+    // How do you access files in this way from the project root?
+    @return url('../images/'+$partial-path);
 }
 
 // Contains the default configuration for images
