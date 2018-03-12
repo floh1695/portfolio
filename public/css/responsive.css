@@ -30,7 +30,7 @@
 .social-media-3,
 .social-media-4,
 .social-media-5 {
-  background-image: url("/public/images/temporary.bmp");
+  background-image: url("./public/images/temporary.bmp");
   background-size: 100%;
   background-position: center; }
 
